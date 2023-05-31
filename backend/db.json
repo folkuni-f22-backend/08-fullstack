@@ -1,6 +1,10 @@
 {
 	"cities": [
 		{ "id": "qwe132", "name": "Karlstad" },
-		{ "id": "rty456", "name": "Göteborg" }
+		{ "id": "rty456", "name": "Göteborg" },
+		{ "id": "asd234", "name": "Stockholm" },
+		{ "id": "wer342", "name": "Västerås" },
+		{ "id": "ghj678", "name": "Uddevalla" },
+		{ "id": "uio789", "name": "Jönköping" }
 	]
 }
