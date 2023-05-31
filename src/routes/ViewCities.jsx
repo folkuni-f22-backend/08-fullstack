@@ -1,7 +1,6 @@
 import { useState } from 'react'
-import './App.css'
 
-function App() {
+function ViewCities() {
 	const [cities, setCities] = useState(null)
 
 	const handleClick = async () => {
@@ -24,4 +23,4 @@ function App() {
 	)
 }
 
-export default App
+export default ViewCities

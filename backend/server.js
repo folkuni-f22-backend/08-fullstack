@@ -19,11 +19,21 @@ const whereWeAre = dirname(fileURLToPath(import.meta.url))
 const dist = join(whereWeAre, '../dist')
 app.use( express.static(dist) )
 
+
 //   /api/cities
 app.use('/api/cities', citiesRouter)
 
 //  /api/search-cities
 app.use('/api/search-cities', searchRouter)
+
+// Inte hållbart att lägga till en route för varje frontend-route
+// app.get('/admin', (res, req) => {
+// 	res.sendFile(join(dist, 'index.html'))
+// })
+// I stället:
+app.get('*', (req, res) => {
+	res.sendFile(join(dist, 'index.html'))
+})
 
 
 app.listen(port, () => {
